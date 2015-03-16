@@ -1,3 +1,13 @@
+if (typeof jQuery=='undefined') {
+  var script    = document.createElement('script');
+  script.src    = 'https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
+  script.onload = addProvider;
+  document.body.appendChild(script);
+}
+else {
+  addProvider();
+}
+
 function addProvider(){
   if (typeof MODx != 'undefined' && typeof MODx.load != 'undefined') {
     var action = (MODx.action) ? MODx.action['workspaces'] : 'workspaces';
