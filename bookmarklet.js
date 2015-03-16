@@ -1,6 +1,6 @@
 if (typeof jQuery=='undefined') {
-  var script        = document.createElement('script')
-  script.src    = 'https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'
+  var script    = document.createElement('script');
+  script.src    = 'https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
   script.onload = addProvider;
   document.body.appendChild(script);
 }
