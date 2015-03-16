@@ -1,7 +1,7 @@
 if (typeof jQuery=='undefined') {
   var script        = document.createElement('script')
-    , script.src    = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'
-    , script.onload = addProvider;
+  script.src    = 'https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'
+  script.onload = addProvider;
   document.body.appendChild(script);
 }
 else {
