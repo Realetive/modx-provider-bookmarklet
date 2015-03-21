@@ -12,11 +12,11 @@ function addProvider(){
   if (typeof MODx != 'undefined' && typeof MODx.load != 'undefined') {
     var action = (MODx.action) ? MODx.action['workspaces'] : 'workspaces';
     if (action == MODx.request.a) {
-      var providerName = prompt(_(provider_add) + ' ' + _(field_required) + ' (' + _(tv_default) + ': modstore.pro)', 'modstore.pro')
-        , providerURL  = prompt(_(provider_url) + ' (' + _(field_required) + ' too)', 'http://modstore.pro/extras/')
-        , userName     = prompt(_(username), '')
-        , userKey      = prompt(_(api_key), '')
-        , desc         = prompt(_(description), 'Магазин дополнений modstore.pro')
+      var providerName = prompt(_('provider_add') + '. ' + _('field_required') + '. ' + _('tv_default') + ': modstore.pro)', 'modstore.pro')
+        , providerURL  = prompt(_('provider_url') + '. ' + _('field_required') + '.', 'http://modstore.pro/extras/')
+        , userName     = prompt(_('username'), '')
+        , userKey      = prompt(_('api_key'), '')
+        , desc         = prompt(_('description'), 'Магазин дополнений modstore.pro')
         , win          = MODx.load({xtype : 'modx-window-provider-create'
                                   , record: {name: providerName
                                             , description: desc
