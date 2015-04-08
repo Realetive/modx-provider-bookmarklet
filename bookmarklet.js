@@ -18,9 +18,9 @@ var locale = 'en',
 }
 
 function getLexicon(langKey, locale = 'en') {
-  var langValue = ( bmLexicon[locale].langKey )
-                  ? bmLexicon[locale].langKey
-                  : bmLexicon['en'].langKey
+  var langValue = bmLexicon[locale].langKey
+                ? bmLexicon[locale].langKey
+                : bmLexicon['en'].langKey
   return langValue;
 }
 
