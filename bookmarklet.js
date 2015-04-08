@@ -17,6 +17,13 @@ var locale = 'en',
       }
 }
 
+function getLexicon(langKey, var locale = 'en') {
+  var langValue = bmLexicon[locale].langKey
+                ? bmLexicon[locale].langKey
+                : bmLexicon['en'].langKey
+  return langValue;
+}
+
 function addProvider() {
   if ( typeof MODx != 'undefined' && typeof MODx.load != 'undefined' ) {
     var action = ( MODx.action ) ? MODx.action[ 'workspaces' ] : 'workspaces',
